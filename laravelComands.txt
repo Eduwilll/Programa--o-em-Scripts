@@ -1,0 +1,2 @@
+instalar laravel: composer global require laravel/installer
+criar um projeto: laravel new NomedoProjeto ou composer create-project --prefer-dist laravel/laravel blog

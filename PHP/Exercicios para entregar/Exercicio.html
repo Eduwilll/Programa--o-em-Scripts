@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body style="background-color:rgb(185, 184, 184)"; >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <fieldset class="border p-2">
+                    <legend class="w-auto">Exercicio 1</legend>
+                    <p>Construir um algoritmo que leia 2 números e 
+                        efetue a adição. Caso o valor somado seja 
+                        maior que 20, este deverá ser apresentando 
+                        somando-se a ele mais 8; caso o valor 
+                        somado seja menor ou igual a 20, este deverá 
+                        ser apresentado subtraindo-se</p>
+                    <form method="POST" action="Exercicio1.php">
+                        <label for="numero a">Digite um numero para somar </label>
+                        <input type="number" name="PrimeiroNumero"><br>
+                        <label for="numero b">Digite um numero para somar</label>
+                        <input type="number" name="SegundoNumero"><br>
+                        <input type="submit" value="enviar" >
+                    </form>
+                </fieldset>
+                <div class="row-sm-6">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto">Exercicio 2</legend>
+                        <p>Entrar com um número e informar se ele é 
+                            divisível por 10, por 5, por 2 ou se não é 
+                            divisível por nenhum destes</p>
+                        <form method="POST" action="Exercicio2.php">
+                            <label for="numero ">Digite um numero Divisivel por 10 ,5 ou 2. </label>
+                            <input type="number" name="Numero"><br>
+                            <input type="submit" value="enviar" >
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="row-sm-6">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto">Exercicio 3</legend>
+                        <p>Entrar com nome, sexo e idade de uma 
+                            pessoa. Se a pessoa for do sexo feminino e 
+                            tiver menos que 25 anos, imprimir nome e a 
+                            a mensagem: ACEITA. Caso contrário, 
+                            imprimir nome e a mensagem: NÃO ACEITA</p>
+                        <form method="POST" action="Exercicio3.php">
+                            <label for="nome">Digite seu Nome </label>
+                            <input type="text" name="nome"><br>
+                            <Div class="form-check" >
+                                <label for="Masculino">Masculino</label>   
+                                <input type="radio" name="sexo" value="Masculino" >
+                                <label for="Feminino">Feminino</label>
+                                <input type="radio" name="sexo" value="Feminino" ><br>
+                            </Div>
+                            <label for="numero ">Digite sua idade </label>
+                            <input type="number" name="idade"><br>
+                            <input type="submit" value="enviar" >
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="row-sm-6">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto">Exercicio 4</legend>
+                        <p> Entrar com 3 números e imprimi-los em 
+                            ordem decrescente (suponha números 
+                            diferentes)</p>
+                        <form method="POST" action="Exercicio4.php">
+                            <label for="PrimeiroNumero">Digite o primeiro numero </label>
+                            <input type="number" name="PrimeiroNumero"><br>
+                            <label for="SegundoNumero">Digite o segundo numero</label>
+                            <input type="number" name="SegundoNumero"><br>
+                            <label for="TerceiroNumero">Digite o terceiro numero</label>
+                            <input type="number" name="TerceiroNumero"><br>
+                            <input type="submit" value="enviar" >
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="row-sm-6">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto">Exercicio 5</legend>
+                        <p> Ler 3 números, os possíveis lados de um 
+                            triângulo, e imprimir a classificação de 
+                            acordo com tamanho dos lados
+                        </p>
+                        <form method="POST" action="Exercicio5.php">
+                            <label for="Base">Digite a base do triângulo </label>
+                            <input type="number" name="Base"><br>
+                            <label for="Lado">Digite o Lado do triagulo</label>
+                            <input type="number" name="Lado"><br>
+                            <label for="Outrolado">Digite o outrolado</label>
+                            <input type="number" name="OutroLado"><br>
+                            <input type="submit" value="enviar" >
+                        </form>    
+                    </fieldset>
+                </div>
+                <div class="row-sm-6">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto">Exercicio 6</legend>
+                        <p>
+                            Ler um número inteiro entre 1 e 12 e escrever 
+                            o mês correspondente. Caso o número seja 
+                            fora desse intervalo, informar que não existe 
+                            mês com este número
+                        </p>
+                        <form method="POST" action="Exercicio6.php">
+                            <label for="numero a">Digite um numero de 1 a 12 </label>
+                            <input type="number" name="PrimeiroNumero" min="1" max="12" ><br>
+                            <input type="submit" value="enviar" >
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="col-sm">
+                <fieldset class="border p-2">
+                    <legend class="w-auto">Exercicio 7</legend>
+                    <p>
+                        A biblioteca de uma universidade deseja fazer 
+                        um algoritmo que leia o nome do livro que 
+                        será emprestado, o tipo de usuário (professor 
+                        ou aluno) e possa imprimir um recibo 
+                        conforme mostrado a seguir. Considerar que 
+                        o professor tem 10 dias para devolver o livro
+                        o aluno somente 3 dias
+                    </p>
+                    <form method="POST" action="Exercicio7.php">
+                        <label for="nome">Digite o Nome do livro </label>
+                        <input type="text" name="nome"><br>
+                        <Div class="form-check" >
+                        <label for="nome">Tipo de Usuario </label><br>
+                        <input type="radio" name="usuario" value="Professor" >
+                        <label for="Masculino">Professor</label>   
+                        <input type="radio" name="usuario" value="Aluno" >
+                        <label for="Feminino">Aluno</label>
+                        </Div>         
+                        <input type="submit" value="enviar" >
+                    </form>
+                </fieldset>
+                <div class="row-sm-6">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto">Exercicio 8</legend>
+                        <p>
+                            Criar um algoritmos que leia um número e 
+                            imprima todos os número de 1 até ele e o seu 
+                            produto.
+                        </p>
+                        <form method="POST" action="Exercicio8.php">
+                            <label for="numero a">Digite um numero </label>
+                            <input type="number" name="PrimeiroNumero"  ><br>
+                            <input type="submit" value="enviar" >
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="row-sm-6">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto">Exercicio 9</legend>
+                        <p>
+                            Entrar com o número de vezes que se deseja 
+                            imprimir a palavra SOL e imprimir
+                        </p>
+                        <form method="POST" action="Exercicio9.php">
+                            <label for="numero a">Digite o numero de quantas vezes quer imprimir a palavra "SOL" </label>
+                            <input type="number" name="PrimeiroNumero"  ><br>
+                            <input type="submit" value="enviar" >
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="row-sm-6">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto">Exercicio 11</legend>
+                        <p>Criar um algoritmos que imprima a tabuada 
+                            de um número</p>
+                        <form method="POST" action="Exercicio11.php">
+                            <label for="numero a">Digite o numero para fazer a tabuada </label>
+                            <input type="number" name="PrimeiroNumero"  ><br>
+                            <input type="submit" value="enviar" >
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="row-sm-6">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto">Exercicio 12</legend>
+                        <p>Criar um algoritmos que entre com
+                            uma palavra e imprima conforme o
+                            exemplo
+                            ◦ Palavra: sonho<br>
+                            ◦ SONHO<br>
+                            ◦ SONHO SONHO<br>
+                            ◦ SONHO SONHO SONHO<br>
+                            ◦ SONHO SONHO SONHO SONHO<br>
+                        </p>
+                        <form method="POST" action="Exercicio12.php">
+                            <label for="Text">Digite a palavra sonho </label>
+                            <input type="text" name="Palavra"><br>
+                            <input type="submit" value="enviar" >
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="row-sm-6">
+                    <fieldset class="border p-2">
+                        <legend class="w-auto">Exercicio 15</legend>
+                        <p>Na usina de Angra dos Reis, os técnicos 
+                            analisam a perda de massa de um material 
+                            radioativo. Sabendo-se que este perde 25% 
+                            de sua massa a cada 30 segundos, criar um 
+                            algoritmos que imprima o tempo necessário 
+                            para que a massa desse material seja menor 
+                            que 0.10
+                        </p>
+                        <form method="POST" action="Exercicio15.php">
+                            <label for="Text">Digite a massa para calcular a perda até 0.10 </label>
+                            <input type="number" name="Massa"><br>
+                            <input type="submit" value="enviar" >
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

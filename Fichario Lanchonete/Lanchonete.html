@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="CSS/smallscreen.css">
+</head>
+<body> 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <fieldset class="border p-2">
+                    <legend class="w-auto">Ações</legend>
+                    <nav id="nav">
+                        <button class="btn btn-light">Novo Pedido</button>
+                        <button class="btn btn-light">Salvar Pedido</button>
+                        <button class="btn btn-light">Fechar Pedido</button>
+                        <button class="btn btn-light">Imprimir Cupom</button>
+                        <button class="btn btn-light">Limpar Campos</button>
+                        <button class="btn btn-light">Imprimir Todos Pedidos</button>
+                        <button class="btn btn-light">Sair</button>
+                    </nav>
+                </fieldset>
+                <div class="row">
+                    <div class="col sm-8">
+                        <fieldset class="border p-2">
+                            <legend class="w-auto">Dados</legend>
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput" class="form-label">Codigo do Pedido</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+                              </div>
+                              <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Nome do Cliente</label>
+                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+                              </div>
+                        </fieldset>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <fieldset class="border p-2">
+                                    <legend class="w-auto">Tipos de lanches</legend>
+                                    <select class="form-control" aria-label="Default select example">
+                                        <option selected>Selecione aqui</option>
+                                        <option value="1">Hamburguer</option>
+                                        <option value="2">Hot Dog</option>
+                                        <option value="4">Pastel</option>
+                                        <option value="5">Coxinha</option>
+                                        <option value="6">Esfiha de Carne</option>
+                                      </select>
+                                </fieldset>
+                            </div>
+                            <div class="col-sm-4">
+                                <fieldset class="border p-2">
+                                    <legend class="w-auto">Adicionais</legend>
+                                    <div class="form-check">
+
+                                        <input type="radio" name="bebidas" id="Sim1">
+                                        <label for="Sim1">Sim</label>
+                                        <input type="radio" name="bebidas" id="Não1">
+                                        <label for="Não1">Não</label>
+                                        
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col">
+                                        <fieldset class="border p-2">
+                                            <legend class="w-auto">Bebidas</legend>
+                                            <div class="form-check">
+
+                                                <input type="radio" name="bebidas" id="Sim2">
+                                                <label for="Sim2">Sim</label>
+                                                <input type="radio" name="bebidas" id="Não2">
+                                                <label for="Não2">Não</label>
+                                                
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div class="col">
+                                        <fieldset class="border p-2">
+                                            <legend class="w-auto">Bebida Gelada</legend>
+                                            <div class="form-check">
+
+                                                <input type="radio" name="bebidas" id="Sim">
+                                                <label for="Sim">Sim</label>
+                                                <input type="radio" name="bebidas" id="Não">
+                                                <label for="Não">Não</label>
+                                                
+                                            </div>
+                                        </fieldset>
+                                    </div>                                  
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <fieldset class="border p-2">
+                                            <legend class="w-auto">Tipos de Bebidas</legend>
+                                            <select class="form-control" aria-label="Default select example">
+                                                <option selected>Selecione aqui</option>
+                                                <option value="1">Suco de Laranja</option>
+                                                <option value="2">Refrigerante</option>
+                                                <option value="4">Cerveja</option>
+                                                <option value="5">Leite de Vaca</option>
+                                                <option value="6">Cachaça</option>
+                                              </select>
+                                        </fieldset>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <fieldset class="border p-2">
+                                            <legend class="w-auto">Data do Pedido</legend>
+                                            <input type="date" class="form-control">
+                                        </fieldset>
+                                    </div>
+                                </div>     
+                            </div>
+                            <div class="col-sm-4">
+                                <fieldset class="border p-2">
+                                    <legend class="w-auto">Adicionais</legend>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="Catchup">
+                                        <label class="form-check-label" for="Catchup">Catchup</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="Mostarda">
+                                        <label class="form-check-label" for="Mostarda">Mostarda</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="Maionese">
+                                        <label class="form-check-label" for="Maionese">Maionese</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="Batata Palha">
+                                        <label class="form-check-label" for="Batata Palha">Batata Palha</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="Molho">
+                                        <label class="form-check-label" for="Molho">Molho</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="Pimenta">
+                                        <label class="form-check-label" for="Pimenta">Pimenta</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="Purê">
+                                        <label class="form-check-label" for="Purê">Purê</label>
+                                    </div>
+                                </fieldset>
+                            </div>                          
+                        </div>                      
+                        <div class="row">
+                            <div class="col">
+                                <fieldset class="border p-2">
+                                    <legend class="w-auto">Observações</legend>
+                                    <textarea class="form-control" id="Observações" rows="2"></textarea>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>                   
+                    <div class="col sm-4">
+                        <fieldset class="border p-2">
+                            <legend class="w-auto">Pedido:</legend>
+                            <div class="mb-3"  >
+                                <textarea id="Pedidos" class="form-control"   rows="27" >Os dados dos pedidos aparecerão aqui.</textarea>
+                              </div>
+                        </fieldset>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#Home" >Home</a></li>
+            <li><a href="#sobrenos" >Sobre Nós</a></li>
+            <li><a href="#produtos" >Produtos</a></li>
+            <li><a href="#contato" >Contados</a></li>
+        </ul>   
+        <div class="bola">
+            Promoção
+        </div>     
+    </header>
+    <section>
+        <article id="container">
+            <hgroup>
+                <div class="box">
+                    <h1>Vacina já</h1>
+                    <p>Esperando a vacina</p>
+                </div>
+
+                <div class="box">
+                    <h1>Fatec Campinas</h1>
+                    <p>Curso de ADS</p>
+                </div>
+            </hgroup>    
+        </article>    
+    </section>
+    <hr>
+    <section id="sobrenos">
+        <h1 >Sobre Nós</h1>
+        <pre>
+            What is Lorem Ipsum?
+            Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown 
+            printer took a galley of type and scrambled it to make 
+            a type specimen book. It has survived not 
+			only five centuries, 
+            but also the leap into electronic typesetting, 
+            remaining essentially unchanged. It was popularised 
+            in the 1960s with the release of Letraset sheets containing 
+            Lorem Ipsum passages, and more recently with desktop 
+			publishing software 
+            like Aldus PageMaker including versions of Lorem Ipsum
+        </pre>
+    </section>
+    <hr>
+    <section id=produtos>
+        <h1 >Produtos</h1>
+        <ol><!-- Lista ordenada -->
+            <li>Calçados</li>
+            <li>Roupas</li>
+            <li>Animais</li>
+            <li>Eletrodomésticos</li>
+        </ol>
+        <dl><!--Lista de definição-->
+            <dt>Calçados</dt>
+            <dd>Qualquer coisa no pé</dd>
+            <dt>Roupas</dt>
+            <dd>Ternos feito a mão</dd>
+            <dt>Animais</dt>
+            <dd>Felinos</dd>
+            <dt>Eletrodomésticos</dt>
+            <dd>Geladeira moderna</dd>
+        </dl>
+    </section>
+    <section id="tabela">
+        <h1 >Tabela de Produtos</h1>
+        <table ><!--tabela-->
+            <caption>Tabela 1 -Produtos</caption> <!--Legenda-->
+                <tr><!--linha-->
+                    <th rowspan="4">Tipos</th><!--Titulo-->
+                    <th>Foto</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                </tr> 
+                <tr><!--linha-->
+                    <td>Foto</td><!--Titulo-->
+                    <td>Via Marte Scarpin Preto</td>
+                    <td>R$150,00</td>   
+                </tr>
+                <tr><!--linha-->
+                    <td>Foto</td><!--Titulo-->
+                    <td>Via Marte Scarpin Vermelho</td>
+                    <td>R$150,00</td>
+                </tr>
+                <tr><!--linha-->
+                    <td>Foto</td><!--Titulo-->
+                    <td>Via Marte Scarpin Roxo</td>
+                    <td>R$150,00</td>
+                </tr>   
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <section id="contato">
+        <form>
+            <h1>Contato</h1>
+            <big>Entre em contado</big>
+            <small>Teremos prazer em atendê-los</small></br>
+            <p>Rua: Maylaski,120,Bairro da Lapa,São Paulo</p></br>
+            <label for="nome">Nome Completo</label></br>
+            <input type="text" name="nome" id="nome" required maxlength="10"></br>
+            <label for="email">Email</label></br>
+            <input type="email" name="email" id="email" required placeholder="Digite o e-mail"></br>
+            <label for="textarea">Menssagem</label></br>
+            <textarea cols="50" rows="5" required wrap="hard"></textarea></br>
+            <input type="submit" value="Enviar"> 
+            <input type="reset" value="Limpar">
+        </form>
+        
+    </section >
+    <footer name="rodape" id="rodape" >
+        <img src="../aula2/Imagens/silhouette-2402991__340.webp" class="image">
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table,th,td{
+            border:1px solid black;
+            border-color: orange;
+            text-align: center;
+            vertical-align: auto;
+        }
+        #tabela{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th{
+            height: 50px;
+            background-color: orange;
+        }
+        tr:hover{
+            background-color: aqua;
+        }
+        tr:nth-child(even){
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <table id="tabela"><!--tabela-->
+        <caption>Tabela de Alunos</caption> <!--Legenda-->
+        <thead>
+            <tr><!--linha-->
+                <th>Nome</th><!--Titulo-->
+                <th>Idade</th>
+                <th>E-Mail</th> 
+            </tr> 
+        </thead>
+        <tbody><!--corpo-->
+            <tr><!--linha-->
+                <td>Taylor</td><!--Titulo-->
+                <td>19 anos</td>
+                <td>taylor@fatec.com</td>   
+            </tr>
+            <tr><!--linha-->
+                <td>Carla</td><!--Titulo-->
+                <td>20 anos</td>
+                <td>carla@fatec.com</td>
+            </tr>
+            <tr><!--linha-->
+                <td>Carla2</td><!--Titulo-->
+                <td>20 anos</td>
+                <td>carla@fatec.com</td>
+            </tr>
+        </tbody>    
+        </tr>
+
+    <tfoot><!--roda pé-->
+        <tr>
+            <th>Total de Alunos</th>
+            <td colspan="2">2</td>
+        </tr>
+    </tfoot>   
+    </table>
+    
+</body>
+</html>

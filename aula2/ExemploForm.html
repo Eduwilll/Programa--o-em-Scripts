@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Form action="exemplo.html" method="POST">
+        <label for="nome">Nome Completo</label>
+        <input type="text" name="nome" id="nome" required maxlength="10">
+        <label for="sexo">Sexo</label>
+        <input type="radio" name="sexo" id="sexo">
+        <input type="radio" name="sexo" id="sexo">
+        <input type="checkbox">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required placeholder="Digite o e-mail">
+        <input type="datetime-local">
+        <input type="submit" value="Submit"> 
+        <input type="reset" value="Limpar">
+        <select name="Cidade" id="cidade">
+            <option value="1">São Paulo</option>
+            <option value="2">Campinas</option>
+        </select>
+        <textarea cols="30" rows="10" required wrap="hard"></textarea>
+        <input type="text" readonly value="Bom dia!">
+    </Form>
+</body>
+</html>
